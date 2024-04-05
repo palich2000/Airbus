@@ -1,7 +1,8 @@
 # Airbus
 
 The YOLOv8 model is trained to search for aircraft on the ground.
-This was done at https://colab.research.google.com/drive/1RxXaa6zn_ZOQJMDdQOjoELw6qh3ae3pH?usp=sharing.
+This was done at [Colab](https://colab.research.google.com/drive/1RxXaa6zn_ZOQJMDdQOjoELw6qh3ae3pH?usp=sharing)
+
 After that, it was exported to tflite format and launched on google coral. It works.
 
 https://coral.ai/docs/accelerator/get-started
