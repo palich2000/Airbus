@@ -281,7 +281,7 @@ def main():
     print('input_shape: ', input_shape)
     _, w, h, _ = input_shape
     print('w: ', w, 'h: ', h)
-
+    cv2.namedWindow('frame', cv2.WINDOW_KEEPRATIO)
     if os.path.isfile(args.input):
         print(f"Processing {args.input}")
         cv2.imshow('frame', process_image(interpreter, args.input, labels, args.threshold))
@@ -294,11 +294,13 @@ def main():
                     image_path = os.path.join(root, file)
                     print(f"Processing {image_path}")
                     img = process_image(interpreter, image_path, labels, args.threshold)
-                    img = cv2.resize(img, (1920, 1080), interpolation=cv2.INTER_LINEAR)
+                    # img = cv2.resize(img, (1920, 1080), interpolation=cv2.INTER_LINEAR)
                     cv2.imshow('frame', img)
                     key = cv2.waitKey(1) & 0xFF
                     if key == ord('q'):
                         return 0
+        while cv2.waitKey(1) & 0xFF != ord('q'):
+            pass
 
 
 if __name__ == '__main__':
