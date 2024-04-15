@@ -18,6 +18,7 @@ python3 ./detect_airplanes_coral.py   --model ./best_full_integer_quant_edgetpu.
 or without coral TPU
 
 python3 ./detect_airplanes_tflite.py  --model ./best_float32.tflite    --input ./495b73c8-024f-46cc-b426-05e49bbe5074.jpg
-
+Coral
 ![Coral](https://github.com/palich2000/Airbus/blob/main/495b73c8-024f-46cc-b426-05e49bbe5074_result.png)
+TfLite
 ![TfLite](https://github.com/palich2000/Airbus/blob/main/495b73c8-024f-46cc-b426-05e49bbe5074_result_tflite.png)
