@@ -1,0 +1,2 @@
+#!/bin/bash
+python3 compile_tflite_model_quant_airbus.py   ~/Airbus/best_float32.tflite     -o airbus_best_tflite     -t $SDK     -d $TRANSLATOR     -c $QUANTIZER     --images ~/Airbus/rz-v2h/dataset/     -v 100   -s 1,512,512,3
